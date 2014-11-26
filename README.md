@@ -1,6 +1,6 @@
-# MKT Landing 3eme période
+# Cedricmagnin.com
 
-Landing page pour la campagne 3eme période
+Mon blog
 
 ### Préprocesseurs :
 * [JADE](http://jade-lang.com/)
