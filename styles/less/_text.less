@@ -1,0 +1,94 @@
+/* Base -------------*/
+body {
+	color: @black;
+	font-size: @baseFontSize;
+    font-family: @font;
+    line-height: @baseLineHeight;
+}
+
+/* Paragraphs  ------*/
+p {
+  orphans: 3; /* pas de ligne seule en bas */
+  widows: 3; /* pas de ligne seule en haut */
+}
+p, ul, li {
+	color: @black;
+	font-size: @paragraphFontSize;
+  font-family: @font;
+  line-height: @paragrapLineHeight;
+  &.min {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    li {
+      font-size: @baseFontSize;
+      line-height: @baseLineHeight;
+    }
+  }
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  page-break-inside: avoid; /* pas de coupure dans ces élements */
+}
+
+/* Titles -----------*/
+.tt-01{
+	display: block;
+	font-size: 14pt;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0;
+	text-transform: uppercase;
+}
+.tt-02{
+	display: block;
+	font-size: 12pt;
+	font-weight: 300;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 2mm;
+  padding-left: 0;
+}
+.tt-03,
+.tt-04 {
+    color: @gold;
+    font-family: @font;
+    font-size: round(( 28em / @baseFontSize ), @round );
+    font-weight: 600;
+    line-height: round(( 32 / 28 ), @round );
+    margin: 0 0 10px;
+}
+.tt-04 {
+    font-weight: normal;
+}
+
+.tt-03,
+.tt-04 {
+	color: @gold;
+	font-family: @font;
+	font-size: round(( 28em / @baseFontSize ), @round );
+	font-weight: 600;
+	line-height: round(( 32 / 28 ), @round );
+	margin: 0 0 10px;
+}
+.tt-04 {
+	font-weight: normal;
+}
+.tt-05,
+.tt-06{
+	color: darken(@grey2,20%);
+	font-family: @font;
+	font-size: round(( 22em / @baseFontSize ), @round );
+	font-weight: 600;
+	line-height: round(( 32 / 22 ), @round );
+	margin: 0 0 10px;
+}
+.tt-06{
+	color: @dark;
+	font-size: round(( 18em / @baseFontSize ), @round );
+	line-height: 1.15;
+	font-weight: 700;
+	text-transform: uppercase;
+}

@@ -1,0 +1,27 @@
+.font-face(@family: arial, @url, @weight: normal, @style: normal){
+	@font-face{
+		font-family: @family;
+		src:url('@{url}/@{family}.eot');
+		src:url('@{url}/@{family}.eot?#iefix') format('embedded-opentype'),
+			url('@{url}/@{family}.woff') format('woff'),
+			url('@{url}/@{family}.ttf') format('truetype'),
+			url('@{url}/@{family}.svg#icon') format('svg');
+		font-weight: @weight;
+		font-style: @style;
+	}
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}

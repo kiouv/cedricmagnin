@@ -1,0 +1,24 @@
+{
+  "url": "",
+  "lang": "fr",
+  "title": "Attestations HTML",
+  "webapp": false,
+  "msColor": false,
+  "urls" : {
+    "css": "/css/",
+    "dyn": "/medias/dyn/",
+    "icon": "/medias/icons/",
+    "img": "/medias/imgs/",
+    "mail": "medias/imgs/email/",
+    "js": "/js/"
+  },
+  "meta": {
+    "viewport": [
+      "width=device-width",
+      "initial-scale=1",
+      "maximum-scale=1",
+      "user-scalable=no",
+      "minimal-ui"
+    ]
+  }
+}

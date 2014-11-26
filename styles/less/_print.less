@@ -1,0 +1,36 @@
+p {
+  orphans: 3; /* pas de ligne seule en bas */
+  widows: 3; /* pas de ligne seule en haut */
+}
+ul {
+  // page-break-inside: avoid; /* pas de coupure dans ces élements */
+}
+
+.no-break-inside {
+  page-break-inside: avoid;  /* pas de coupure dans ces élements */
+}
+.no-break-before {
+  page-break-before: avoid; /* pas de saut avant ces éléments */
+}
+.break-before {
+  page-break-before: always; /* pas de saut avant ces éléments */
+}
+.no-break-after {
+  page-break-after: avoid; /* pas de saut après ces éléments */
+}
+
+/* Regles possibles */
+
+// p, blockquote {
+//   orphans: 3; /* pas de ligne seule en bas */
+//   widows: 3; /* pas de ligne seule en haut */
+// }
+// blockquote, ul, ol {
+//   page-break-inside: avoid;  pas de coupure dans ces élements 
+// }
+// h1 {
+//   page-break-before: always; /* chaque titre commence sur une nouvelle page */
+// }
+// h1, h2, h3, caption {
+//   page-break-after: avoid; /* pas de saut après ces éléments */
+// }

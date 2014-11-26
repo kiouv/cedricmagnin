@@ -1,0 +1,166 @@
+// color;
+@dark        : #000000;
+@black       : #000000;
+@light       : #f3f3f3;
+@white       : #ffffff;
+@gray        : #999999;
+@grey        : #999999;
+@grey2       : #888887;
+@grey3       : #d8d8d8;
+@grey4 		   : #a8a9a9;
+@grey-light  : #d8d8d8;
+@blue-grey   : #313638;
+@blue-grey2	 : #535556;
+@blue-dark   : #1e2122;
+@gold 		   : #f7aa00;
+
+// url;
+@url-medias     : '/medias/';
+@url-font       : '@{url-medias}fonts/';
+@url-img        : '@{url-medias}imgs/';
+@url-dyn        : '@{url-medias}dyn/';
+@url-ie         : '@{url-img}fallback/';
+@url-bg         : '@{url-dyn}backgrounds/';
+
+
+// font;
+@font-site      : 'Times New Roman';
+@font           : @font-site, Arial, sans-serif;
+@font-size      : 1;
+@font-root      : 8pt ;
+
+
+// base color;
+@text           : @dark;
+@bd             : @dark;
+@bg             : @light;
+@placeholder    : @dark;
+
+
+// title;
+@tt-1           : @dark;
+@tt-1-bd        : @dark;
+@tt-1-bg        : @dark;
+@tt-2           : @dark;
+@tt-3           : @dark;
+@tt-4           : @dark;
+@tt-5           : @dark;
+@tt-6           : @dark;
+
+
+// link;
+@link           : @dark;
+@link-visited   : @dark;
+@link-hover     : @dark;
+@link-active    : @dark;
+
+// Misc
+@round          : 3;
+
+
+// LEGACY
+// --------------------------------------------------
+
+// Typography
+// -------------------------
+
+// Size
+@baseFontSize: 						8pt;
+@baseLineHeight: 					@baseFontSize * 1.2857;
+@paragraphFontSize: 				10pt;
+@paragrapLineHeight: 				@paragraphFontSize * 1.2857;
+
+// Family
+@sansFontFamily: 					Arial, Helvetica, sans-serif;
+@headingsFontFamily:				"Oswald", @sansFontFamily;
+@btnFontFamily:						"Oswald", @sansFontFamily;
+
+// Weight
+@headingsFontWeight:				normal;
+@btnFontWeight:						300;
+@btnSubmitFontWeight:				normal;
+
+// Para Margins
+@paragraphMargin: 					1mm 0;
+@sectionTopMargin: 					3mm;
+
+// Colors
+// -------------------------
+
+// Text color
+@textColor: 						#999999;
+@grayDark:							#000000;
+
+// Background color
+@signBox:							#FFE51E;
+@backgroundColor:					#ffffff;
+@altBackgroundColor:				#dedede;
+@footerBackgroundColor:				#f3f3f3;
+@bannerBackgroundColor:				#d6ecff;
+@gradientPageColor:					#f5f9ff;
+@plansActionCaBackgroundColor: 		#f5f5f5;
+@plansActionPictosBackgroundColor: 	#9bc32e;
+@menuCompteBackGroundColor :  		#F5F5F5;
+@menuListeInactifColor :  			#999898;
+
+@patternTop: 						url(/images/bg/bgPatternTop.png);
+@patternBottom: 					url(/images/bg/bgPatternBottom.png);
+@patternHomeButton: 				url(/images/bg/bgPatternHomeButton.png);
+@arrowFooterButton: 				url(/images/bg/bgArrowFooterButton.png);
+
+
+// Primary color --*/
+@primaryColor:						#72aa00;
+@primaryColorHighlight:				#9bc32e;
+@primaryColorDarken:				#719b33;
+
+// Links
+// -------------------------
+
+// Link
+@linkColor:							@primaryColor;
+@linkColorHover:					darken(@linkColor, 15%);
+
+// Navbar
+// -------------------------
+
+@navbarHeight:						100px;
+
+// Link
+@navbarLinkColor: 					@grayDark;
+@navbarLinkBackgroundHover: 		fade(@altBackgroundColor,25);
+@navbarLinkBackgroundActive: 		fade(@altBackgroundColor,50);
+
+// Chrome
+// -------------------------
+
+// Border-radius
+@baseBorderRadius:					2px;
+@borderRadiusLarge:					3px;
+@borderRadiusSmall:					1px;
+
+// Box-shadow
+@boxShadowColor: 					fade(@black,20%);
+@baseBoxShadow: 					0 1px 4px @boxShadowColor;
+
+// Transition
+@baseTransitionAll: 				all 0.1s ease-in-out;
+@baseTransitionColor: 				color 0.1s ease-in-out;
+@baseTransitionBackground: 			background 0.1s ease-in-out;
+
+
+// BUTTONS
+// --------------------------------------------------
+
+// Border & Shadow
+@ousetShadow: 						0 0 0 1px @boxShadowColor;
+@insetShadow: 						inset 0 1px 4px @boxShadowColor;
+@buttonBoxShadow: 					@ousetShadow;
+@buttonActiveBoxShadow:  			@buttonBoxShadow, @insetShadow;
+@buttonBorder: 						none;
+@buttonInverseBoxShadow: 			none;
+@buttonInverseActiveBoxShadow: 		@insetShadow;
+@buttonInverseBorder: 				solid 1px @boxShadowColor;
+
+@btnPrimaryBackground: 				@primaryColorHighlight;
+@btnPrimaryBackgroundHighlight: 	@primaryColor;

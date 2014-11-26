@@ -1,0 +1,261 @@
+a.brand
+  float left
+
+section
+  padding 20px 0
+  background greybg
+  clear: both
+  
+  &#hero
+    clearfix()
+    padding 0
+    height 100%
+    background-attachment fixed
+    background-image url(../medias/imgs/banner.jpg)
+    background-position bottom center
+    background-repeat no-repeat
+    background-size cover
+    // background url(../medias/imgs/visuel-main.jpg) center center no-repeat
+    color white
+    
+    nav
+      clearfix()
+      padding 20px 0
+      position fixed
+      width 100%
+      z-index: 10
+      transition 500ms
+      text-transform: uppercase
+      font-weight: 700
+      background: rgba(255, 255, 255, 0);
+      
+      a.nav-mobile
+        color white
+        font-weight: 300
+        float: right
+        padding 10px
+        display: block
+        cursor: pointer
+        transition 500ms
+        span.text
+          display: inline-block
+          text-indent: -9999px
+      
+      a.brand
+        width 97px
+        transition 500ms
+        
+        &.text
+          width: auto
+          text-transform: uppercase
+          color white
+          text-decoration: none
+          padding-top 15px
+          &:hover
+            text-decoration: underline
+
+      ul
+        display: none
+        float: right
+        margin 10px 0 0 -10px
+        li
+          display inline-block
+          padding 10px 5px
+          transition 500ms
+          &:last-child
+            padding-right: 0
+            a
+              padding-right: 0
+          a
+            color white
+            text-decoration: none
+            display: block
+            padding 5px
+            &:hover
+              text-decoration: underline
+              
+      &.min
+        background: rgba(255, 255, 255, 0.8);
+        padding 15px 0 10px 0
+        a.nav-mobile
+          padding 5px
+          color dark
+        a.brand
+          width 60px
+          &.text
+            width: auto
+            padding-top: 5px
+            color dark
+        ul
+          li
+            font-size: 0.9em
+            padding 1px 5px 5px 5px
+            a
+              color dark
+        
+    .promesse
+      clearfix()
+      radius(0 0 60px)
+      width auto
+      margin 0px 20px
+      margin-top 20%
+      background rgba(0, 0, 0, 0.6)
+      padding 60px
+      text-align: center
+
+    // .engage,
+    // .comingout
+    //   width: auto
+    //   margin: 0 auto
+    //   text-align: center
+    //   p
+    //     font-size: 1.3em
+    //     font-style: italic
+    //     line-height: 1.2em
+    //     margin: 5px 0
+    //   a
+    //     color white
+    //   .action
+    //     padding-top: 20px
+    
+    // .engage
+    //   padding-top: 120px
+    
+    // .comingout
+    //   padding-top: 80px
+    //   .already
+    //     font-size: 1.7em
+    //     margin: 0
+  
+  .content
+    background white
+    padding 40px 0
+    margin-top: 40px
+    radius(0 0 60px)
+    
+    article
+      font-size: 1.2em
+      line-height: 1.6em
+      max-width 640px
+      margin 0 auto
+      padding 0 20px
+        
+    .resume
+      position relative
+      padding 30px 20px 30px 100px
+      border 1px solid light
+      margin 20px auto 0
+      max-width: 640px
+      text-align: left
+      radius(0 0 40px)
+      span
+        position absolute
+        left 30px
+        color light
+        
+  &#acteurs
+    
+    p.headline
+      margin-bottom: 60px
+      
+  
+  .iframe-wp
+    width 600px
+    margin 0 auto
+
+          
+  &#faq
+    .faq
+      h3
+        padding-right: 20px
+        &:hover
+          cursor pointer
+        &:focus
+          outline 0
+        .libelle
+          position: relative
+        .libelle:after
+          position absolute
+          bottom 8px
+          content "+"
+          display: inline-block
+          margin-left 10px
+          padding 0px 4px
+          font-size: 0.5em
+          line-height: 1.3em
+          background: orange
+          color white
+          box-shadow: 2px 2px dark-orange
+        &.ui-accordion-header-active
+          .libelle:after
+            content "-"
+            padding 0px 5px
+            background: light
+            box-shadow: 2px 2px dark
+            
+      p
+        color light
+        margin: 0
+        
+        
+  &#equipe
+    clearfix()
+    background: greybg
+    .equipe
+      margin-top: 20px
+      li
+        clearfix()
+        clear both
+        padding-top: 20px
+        img
+          float: left
+          margin-right: 20px
+          width 50%
+        h4
+          margin-top: 0
+        p
+          color light
+          letter-spacing 1px
+          
+
+  &#contact
+    background: white
+    padding-bottom: 40px
+    &.via
+      background: greybg
+    .contact
+      clearfix()
+      padding-top: 0
+      
+      > div
+        text-align: center
+        input
+        textarea
+          width 90%
+        textarea
+          height 180px
+        
+        p.tel
+          font-size: 2.4em
+          span
+            font-size: 0.43em
+            display: block
+            padding-top: 15px
+            font-style: italic
+            color light
+  
+footer
+  clearfix()
+  background dark
+  color white
+  text-align: center
+  a.brand
+    position relative
+    display: block
+    float: none
+  p
+    margin: 0
+    padding 12px 0 24px 0
+    
+
+

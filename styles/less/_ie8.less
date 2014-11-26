@@ -1,0 +1,121 @@
+/* != Header
+--------------------------------------------------------------------------- */
+#header{
+  .light{
+    .logo{
+      background-image: url( "@{url-img}main-logo-ie-small.jpg" );
+      width: 240px;
+    }
+  }
+}
+  .logo{
+    background-image: url( "@{url-img}main-logo-ie.jpg" );
+  }
+
+
+/* != Footer
+--------------------------------------------------------------------------- */
+#footer{
+  .tt-01{
+    font-size: 20em/@baseFontSize;
+  }
+  .logo{
+    background-image: url( "@{url-img}main-logo-footer-ie.jpg" );
+    width: 226px;
+  }
+}
+
+
+/* != Edito
+--------------------------------------------------------------------------- */
+.perf-steps{
+  .step{
+    background: url("@{url-img}bd-circle-ie.png") no-repeat 50% 50%;
+    border: 0 none;
+  }
+}
+
+.blk{
+  & > div{
+    min-height: 140px;
+  }
+}
+
+
+/* != Buttons
+--------------------------------------------------------------------------- */
+// Toggle button
+.bt-toggle {
+
+  .picto {
+    background: url( "@{url-ie}bg-toggle.png" ) no-repeat 0 0;
+  }
+}
+
+// Help button
+.bt-help {
+  background: url( "@{url-ie}bg-help.png" ) no-repeat 0 0;
+}
+
+/* != Smart Diag
+--------------------------------------------------------------------------- */
+/* ! Results
+---------------------- */
+// Graph
+.diag-graph {
+  .data {
+    padding: 30px;
+    width: 756px;
+
+    li {
+      padding-top: 40px;
+      width: 108px;
+
+      // + li {
+      //  margin-left: 6px;
+      // }
+
+      // > div {
+
+      //  &:before {
+      //    background: url( "@{url-ie}graph-mask.png" ) no-repeat 0 0;
+      //    padding-top: 22px;
+      //    width: 55px;
+      //  }
+      // }
+    }
+
+  }
+}
+
+/* ! Plan
+---------------------- */
+// Packs
+.price-packs {
+
+  [class*="pack-"] {
+
+    [class*="badge"] {
+      background: url( "@{url-ie}bg-badge.png" ) no-repeat 0 0;
+      border: 0;
+      height: 73px;
+      width: 73px;
+
+      &:after {
+        height: 73px;
+        line-height: 73px;
+      }
+    }
+    .badge-clock {
+      &:after {
+        line-height: 73px;
+      }
+    }
+    .badge-leaf {
+      &:after {
+        line-height: 73px;
+      }
+    }
+  }
+}
+
