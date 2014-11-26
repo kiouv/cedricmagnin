@@ -1,11 +1,11 @@
 /* global module:false */
 module.exports = function( grunt ){
 
-  grunt.registerTask( 'deploy', function(){
+  grunt.registerTask( 'old-deploy', function(){
 
     grunt.config.set( 'notify.deploy', {
       options: {
-        title: "<%= pkg.title || pkg.name %>",
+        title: "<%= package.title || package.name %>",
         message: "Project deployed"
       }
     } );
@@ -21,18 +21,19 @@ module.exports = function( grunt ){
             'medias/**/*',
             'pages/**/*'
           ],
-          dest: '../clients/test/private/'
+          dest: '../_deploy/<%= package.name %>/private/'
         },
         {
           expand: true,
           cwd: 'publish',
           src: [ '**/*' ],
-          dest: '../clients/test/www'
+          dest: '../_deploy/<%= package.name %>/www'
         }
       ]
     } );
 
     grunt.task.run( [
+      'clean:deploy',
       'release',
       'copy:deploy',
       'notify:deploy'

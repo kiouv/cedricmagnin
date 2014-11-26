@@ -1,17 +1,18 @@
 {
-  "name": "perfhabitat",
-  "title": "perfhabitat",
+  "name": "cedricmagnin.com",
+  "title": "Site de Cédric Magnin",
   "description": "",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git://bitbucket.org/energieperspective/moteur-html.git"
+    "url": "https://github.com/kiouv/cedricmagnin.git"
   },
   "scripts": {
     "start": "npm install && grunt dev && grunt concurrent:start"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^1.0.1",
     "grunt-concurrent": "^0.5.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.0",
@@ -25,17 +26,17 @@
     "grunt-contrib-stylus": "^0.20.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-autoprefixer": "^1.0.1",
     "grunt-fontsmith": "^0.9.1",
     "grunt-modernizr": "^0.5.2",
     "grunt-notify": "^0.3.0",
     "grunt-pngmin": "^0.6.1",
     "grunt-spritesmith": "^2.1.1",
+    "grunt-ssh": "^0.12.0",
     "grunt-svgmin": "^0.4.0",
     "grunt-tree": "^0.4.6",
     "jpegtran-bin": "^0.2.7",
     "json2fontcss": "^0.2.1",
     "load-grunt-config": "^0.12.0",
-    "phantomjs": "^1.9.11"
+    "phantomjs": "^1.9.12"
   }
 }

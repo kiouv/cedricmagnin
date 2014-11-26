@@ -9,3 +9,5 @@ jpgtmp.jpg
 sftp-config.json
 .DS_Store
 publish/
+ssh.json
+dploy.yaml

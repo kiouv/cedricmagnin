@@ -28,7 +28,7 @@ npm i -D phantomjs
 
 Vous êtes maintenant prêt à utiliser la puissance de node.js.
 
-Après avoir cloner le repo sur votre ordi, dans le dossier du projet :
+Après avoir cloné le repo sur votre ordi, dans le dossier du projet :
 ```
 npm install && grunt dev && grunt concurrent:start
 ```
