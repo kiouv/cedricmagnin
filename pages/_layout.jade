@@ -50,7 +50,6 @@ html( class="no-js", lang=lang )
     script(src="#{urls.js}vendors/modernizr.js")
 
     //- Stylesheets
-    //- link( rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" )
     link( rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" )
     link( rel="stylesheet" href="#{urls.css}styles.css" )
 
@@ -61,8 +60,14 @@ html( class="no-js", lang=lang )
 
     div#app
 
+      block header
+        include _layout/header.jade
+
       div#main
         block content
+
+      block footer
+        include _layout/footer.jade
 
     block scripts
       include _layout/scripts.jade

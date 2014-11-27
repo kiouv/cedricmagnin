@@ -1,0 +1,31 @@
+
+  section#contact
+    .wp
+      p.headline.white-bg
+        | Une question, des réactions ? Contactez nous ?
+
+      form( action="" method="post" )#contact-form
+        div.contact.clearfix
+          div
+            h4
+              | Appelez-nous
+            p.tel
+              = contact
+              span
+                | Numéro gratuit
+          div
+            h4
+              | Ecrivez-nous
+            p
+              textarea( name="message" placeholder="Message" )#message
+          div
+            input( type="hidden" name="campaign" value="3P" )
+            p
+              input( type="text" name="name" placeholder="Nom" )#name
+            p
+              input( type="email" name="email" placeholder="Email" )#email
+            p
+              a( href="#" )#submit.button.small
+                span
+                  | Envoyer
+            div#success
