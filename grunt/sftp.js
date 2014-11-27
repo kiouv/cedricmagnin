@@ -1,10 +1,10 @@
 module.exports = {
   deploy: {
     files: {
-      "./": "release/**"
+      "./": "<%= build %>/**"
     },
     options: {
-      srcBasePath: "release/",
+      srcBasePath: "<%= build %>/",
       createDirectories: true,
       host: '<%= secret.host %>',
       port: 22,
