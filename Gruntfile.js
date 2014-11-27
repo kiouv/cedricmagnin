@@ -19,6 +19,7 @@ module.exports = function( grunt ){
 
   // default grunt configuration
   var defaults = {
+    secret: grunt.file.readJSON('grunt/ssh.json'),
     build: buildDir,
     scripts: scripts,
     pageSettings: pageSettings,
